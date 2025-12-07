@@ -58,11 +58,13 @@ const onBookSubmit = async () => {
 };
 
   try {
-    const res = await fetch('https://backend-nine-mocha-94.vercel.app', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    });
+   const res = await fetch('https://backend-nine-mocha-94.vercel.app/api/bookings', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(payload),
+});
+
+   
 
     const data = await res.json();
 
