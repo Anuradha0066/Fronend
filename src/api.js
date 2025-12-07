@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api',  // change if different
+  baseURL: 'https://backend-nine-mocha-94.vercel.app',  // change if different
 });
 
 // If staff logs in and you store token (e.g. in localStorage)

@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:5000/api'; // backend URL
+const BASE_URL = 'https://backend-nine-mocha-94.vercel.app'; // backend URL
 
 export async function fetchWithAuth(endpoint) {
   const token = localStorage.getItem('staffToken');

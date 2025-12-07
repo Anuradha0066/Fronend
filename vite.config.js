@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:5000', // backend URL
+        target: 'http://localhost:500https://backend-nine-mocha-94.vercel.app', // backend URL
         changeOrigin: true,
         secure: false,
       },
