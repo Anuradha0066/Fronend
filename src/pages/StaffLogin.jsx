@@ -11,11 +11,12 @@ const StaffLogin = () => {
     e.preventDefault();
     try {
       // ✅ Use relative URL if Vite proxy is setup in vite.config.js
-      const res = await fetch('/api/staff/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password }),
-      });
+     const res = await fetch('https://backend-nine-mocha-94.vercel.app/api/staff/login', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ email, password }),
+});
+
 
       if (!res.ok) {
         throw new Error(`HTTP error! status: ${res.status}`);
